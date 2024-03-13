@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,9,121,1) 35%, rgba(89,0,255,1) 100%);
+
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #5900ff;
+    box-shadow: 3px 8px 30px rgba(0, 0, 0, 0.418);
+    border-radius: 20px;
+
+    width: 25%;
+    height: 60%;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin: 10px 0;
+}
+
+.input-box > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #300979;
+    color: rgba(255, 255, 255, 0.849);
+    outline: none;
+}
+
+.input-box > input::placeholder {
+    color: aliceblue;
+}
+
+.input-box > label {
+    color: #300979;
+    margin-bottom: 10px;
+
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.card-login > h1 {
+    font-size: 3em;
+    color: #300979;
+
+}
+
+.btn-login {
+    width: 34%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #300979;
+    color: rgba(255, 255, 255, 0.849);
+    outline: none;
+
+    margin: 10px 0;
+}
+
+@media only screen and (max-width:360px) {
+    .card-login {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .card-login {
+        width: 30%;
+    }
+}
